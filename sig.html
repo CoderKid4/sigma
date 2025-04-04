@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe on top of Another</title>
+    <title>Iframe with Small Sliver Visible</title>
     <style>
         body {
             margin: 0;
@@ -25,12 +25,14 @@
         }
         .bottom-iframe {
             z-index: 1;
+            transform: translateY(-90%); /* Move the bottom iframe up */
+            height: 10vh; /* Adjust the height to show a small sliver */
         }
     </style>
 </head>
 <body>
     <div class="iframe-container">
-        <iframe class="top-iframe" src="https://coderkid4.github.io/brainrot/sigma.html"></iframe>
+<iframe class="top-iframe" src="https://coderkid4.github.io/brainrot/sigma.html"></iframe>
         <iframe class="bottom-iframe" src="https://coderkid4.github.io/brainrot/recording-2025-04-03-19-02-02%20(online-audio-converter.com).mp3"></iframe>
     </div>
 </body>
